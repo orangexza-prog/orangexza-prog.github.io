@@ -3,39 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Proyectos y Juegos</title>
+    <title>Mis Proyectos | OrangeXZA</title>
     <style>
-        body { background-color: #121212; color: white; font-family: Arial, sans-serif; text-align: center; }
-        .container { max-width: 500px; margin: 50px auto; padding: 20px; }
-        .link-card { 
-            background: #1e1e1e; 
-            margin: 15px 0; 
-            padding: 20px; 
-            border-radius: 10px; 
-            text-decoration: none; 
-            color: cyan; 
-            display: block; 
-            transition: 0.3s;
-            border: 1px solid #333;
+        :root {
+            --primary: #00f2ff;
+            --bg: #0a0a0a;
+            --card: #161616;
         }
-        .link-card:hover { background: #333; transform: scale(1.02); }
-        h1 { color: white; }
+        body { 
+            background-color: var(--bg); 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .profile-pic {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 15px var(--primary);
+            margin-bottom: 20px;
+        }
+        h1 { margin-bottom: 5px; font-size: 24px; }
+        .description { color: #888; margin-bottom: 30px; }
+        
+        .container { width: 100%; max-width: 450px; }
+        
+        .link-card { 
+            background: var(--card); 
+            margin: 15px 0; 
+            padding: 18px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            color: white; 
+            display: block; 
+            transition: all 0.3s ease;
+            border: 1px solid #333;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .link-card:hover { 
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            background: #1f1f1f;
+        }
+        .link-card span {
+            display: block;
+            font-size: 12px;
+            color: var(--primary);
+            margin-top: 5px;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
+
+    <img src="https://github.com/orangexza-prog.png" class="profile-pic" alt="User">
+    <h1>OrangeXZA Projects</h1>
+    <p class="description">Descarga mis juegos y proyectos modificados</p>
+    
     <div class="container">
-        <h1>Mis Juegos Modificados</h1>
-        <p>Descargas directas y seguras</p>
-        
-        <a href="TU_LINK_DE_INTERNET_ARCHIVE" class="link-card">
-            <h3>Juego Modificado 1</h3>
-            <p>Versión estable - 4GB</p>
+        <a href="AQUÍ_PONES_EL_LINK_DE_ARCHIVE_ORG" class="link-card" target="_blank">
+            🎮 JUEGO MODIFICADO 1
+            <span>Descarga Directa (MediaFire/Archive)</span>
         </a>
 
-        <a href="TU_LINK_DE_TELEGRAM" class="link-card">
-            <h3>Pack de Utilidades</h3>
-            <p>Optimización total</p>
+        <a href="TU_LINK_DE_TELEGRAM" class="link-card" target="_blank">
+            📢 CANAL DE TELEGRAM
+            <span>Únete para actualizaciones</span>
         </a>
-    </div>
+
+        </div>
+
 </body>
 </html>
